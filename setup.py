@@ -5,7 +5,7 @@ import uuid
 from setuptools import setup, find_packages
 from pip.req import parse_requirements
 
-__author__ = 'Maarten Wallraf <mwallraf@users.noreply.github.com>'
+__author__ = 'Maarten Wallraf <maarten@2nms.com>'
 
 install_reqs = parse_requirements('requirements.txt', session=uuid.uuid1())
 reqs = [str(ir.req) for ir in install_reqs]
@@ -15,7 +15,7 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     author="Maarten Wallraf",
-    author_email="mwallraf@users.noreply.github.com",
+    author_email="maarten@2nms.com",
     description="Network Automation and Programmability Abstraction Layer with Multivendor support: Ciena SAOS",
     classifiers=[
         'Topic :: Utilities',
