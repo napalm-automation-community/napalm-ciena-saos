@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2016 Dravetech AB. All rights reserved.
+# Copyright 2019 Maarten Wallraf. All rights reserved.
 #
 # The contents of this file are licensed under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with the
@@ -313,14 +313,3 @@ class CienaSAOSDriver(NetworkDriver):
             vswitch_facts.append(vswitch)
 
         return vswitch_facts
-
-
-
-
-if __name__ == '__main__':
-    import json
-    o = CienaSAOSDriver("host", "user", "pass")
-    print(json.dumps(o.get_facts()))
-
-
-
